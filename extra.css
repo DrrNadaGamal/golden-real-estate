@@ -43,3 +43,4 @@
 a.btn-contact{text-decoration:none;display:inline-flex;gap:6px;align-items:center}
 html,body{overflow-x:hidden}
 @media(max-width:992px){.nav-menu{visibility:hidden}.nav-menu.active{visibility:visible}}
+@media(max-width:600px){.nav-buttons{display:none}}
