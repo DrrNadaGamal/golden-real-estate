@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow"><meta name="description" content="العقارات الذهبية - منصة عقارية رائدة تقدم أفضل العقارات في المملكة العربية السعودية">
+    <meta name="keywords" content="عقارات, فلل, شقق, أراضي, استثمار عقاري, الرياض, جدة, الدمام">
+    <title>العقارات الذهبية - أفخم العقارات في المملكة</title>
+    <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar" id="navbar"><div class="container"><a class="logo" href="index.html"><i class="fas fa-building"></i><span>العقارات الذهبية</span></a><ul class="nav-menu" id="nav-menu"><li><a href="index.html" class="nav-link">الرئيسية</a></li><li><a href="properties.html" class="nav-link active">العقارات</a></li><li><a href="services.html" class="nav-link">خدماتنا</a></li><li><a href="about.html" class="nav-link">من نحن</a></li><li><a href="agents.html" class="nav-link">فريقنا</a></li><li><a href="blog.html" class="nav-link">المدونة</a></li><li><a href="contact.html" class="nav-link">تواصل معنا</a></li></ul><div class="nav-buttons"><a class="btn-primary" href="contact.html"><i class="fas fa-phone"></i> احجز استشارة</a></div><button class="menu-toggle" id="menu-toggle" aria-label="القائمة"><span></span><span></span><span></span></button></div></nav>
+
+    <!-- القسم الرئيسي Hero -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/552f91540c.jpg')">
+                <div class="hero-content">
+                    <h1 class="hero-title animate-up">اكتشف منزل أحلامك</h1>
+                    <p class="hero-subtitle animate-up delay-1">نساعدك في إيجاد العقار المثالي الذي يناسب احتياجاتك وميزانيتك</p>
+                    <div class="hero-buttons animate-up delay-2">
+                        <button class="btn-hero-primary" onclick="location.href='properties.html'">
+                            <i class="fas fa-search"></i> استكشف العقارات
+                        </button>
+                        <button class="btn-hero-secondary" >
+                            <i class="fas fa-phone"></i> احجز استشارة مجانية
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/7ab8101cd0.jpg')">
+                <div class="hero-content">
+                    <h1 class="hero-title">عقارات فاخرة بأسعار تنافسية</h1>
+                    <p class="hero-subtitle">اختر من بين أكثر من 5000 عقار في جميع أنحاء المملكة</p>
+                    <div class="hero-buttons">
+                        <button class="btn-hero-primary" onclick="location.href='properties.html'">
+                            <i class="fas fa-home"></i> تصفح العقارات
+                        </button>
+                        <button class="btn-hero-secondary" onclick="location.href='contact.html'">
+                            <i class="fas fa-envelope"></i> تواصل معنا
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/8ae1e3d7e9.jpg')">
+                <div class="hero-content">
+                    <h1 class="hero-title">استثمر في المستقبل</h1>
+                    <p class="hero-subtitle">فرص استثمارية مميزة في أفضل المواقع</p>
+                    <div class="hero-buttons">
+                        <button class="btn-hero-primary" >
+                            <i class="fas fa-chart-line"></i> فرص الاستثمار
+                        </button>
+                        <button class="btn-hero-secondary" onclick="scrollToSection('services')">
+                            <i class="fas fa-briefcase"></i> خدماتنا
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="hero-prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-right"></i></button>
+        <button class="hero-next" onclick="changeSlide(1)"><i class="fas fa-chevron-left"></i></button>
+        <div class="hero-dots"></div>
+
+        <!-- نموذج البحث -->
+        <div class="search-box">
+            <div class="search-tabs">
+                <button class="search-tab active" data-type="buy">شراء</button>
+                <button class="search-tab" data-type="rent">إيجار</button>
+                <button class="search-tab" data-type="commercial">تجاري</button>
+            </div>
+            <div class="search-form">
+                <div class="search-field">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="المدينة أو الحي">
+                </div>
+                <div class="search-field">
+                    <i class="fas fa-home"></i>
+                    <select>
+                        <option>نوع العقار</option>
+                        <option>فيلا</option>
+                        <option>شقة</option>
+                        <option>أرض</option>
+                        <option>عمارة</option>
+                        <option>دوبلكس</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <i class="fas fa-bed"></i>
+                    <select>
+                        <option>عدد الغرف</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <i class="fas fa-dollar-sign"></i>
+                    <select>
+                        <option>نطاق السعر</option>
+                        <option>أقل من 500,000</option>
+                        <option>500,000 - 1,000,000</option>
+                        <option>1,000,000 - 2,000,000</option>
+                        <option>2,000,000 - 5,000,000</option>
+                        <option>أكثر من 5,000,000</option>
+                    </select>
+                </div>
+                <button class="btn-search">
+                    <i class="fas fa-search"></i> بحث
+                </button>
+                <button class="btn-advanced" >
+                    <i class="fas fa-sliders-h"></i> بحث متقدم
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">لماذا تختارنا</span>
+                <h2 class="section-title">مميزات تجعلنا الخيار الأفضل</h2>
+                <p class="section-description">نقدم خدمات متكاملة تضمن لك أفضل تجربة في البحث عن العقار المناسب</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>ضمان قانوني كامل</h3>
+                    <p>جميع العقارات مفحوصة قانونياً وموثقة لضمان حقوقك الكاملة</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>دعم على مدار الساعة</h3>
+                    <p>فريق خدمة العملاء متواجد دائماً للإجابة على استفساراتك</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3>بحث متقدم وذكي</h3>
+                    <p>محرك بحث قوي يساعدك في العثور على العقار المثالي بسرعة</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>جولات افتراضية 360°</h3>
+                    <p>تجول في العقار من منزلك بتقنية الواقع الافتراضي</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>حاسبة التمويل العقاري</h3>
+                    <p>احسب القسط الشهري وخطة التمويل المناسبة لك بسهولة</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>تسهيلات في الدفع</h3>
+                    <p>خطط دفع مرنة وتمويل عقاري بشراكة مع أفضل البنوك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العقارات المميزة -->
+    <section class="properties" id="properties">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">عقاراتنا المميزة</span>
+                <h2 class="section-title">اكتشف أفضل العقارات المتاحة</h2>
+                <p class="section-description">مجموعة مختارة من أفخم وأحدث العقارات في أفضل المواقع</p>
+            </div>
+
+            <!-- فلاتر العقارات -->
+            <div class="property-filters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="villa">فيلا</button>
+                <button class="filter-btn" data-filter="apartment">شقة</button>
+                <button class="filter-btn" data-filter="land">أرض</button>
+                <button class="filter-btn" data-filter="building">عمارة</button>
+                <button class="filter-btn" data-filter="duplex">دوبلكس</button>
+            </div>
+
+            <!-- شبكة العقارات -->
+            <div class="properties-grid">
+                <!-- عقار 1 -->
+                <div class="property-card" data-category="villa">
+                    <div class="property-image">
+                        <img src="img/968c75844a.jpg" alt="فيلا فاخرة">
+                        <div class="property-badge">جديد</div>
+                        <div class="property-status sale">للبيع</div>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        <div class="property-overlay">
+                            <button class="btn-tour" >
+                                <i class="fas fa-video"></i> جولة افتراضية
+                            </button>
+                            <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">2,500,000 ريال</div>
+                        <h3 class="property-title"><a href="property-1.html">فيلا فاخرة في حي الياسمين</a></h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> الرياض، حي الياسمين
+                        </p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 5 غرف</span>
+                            <span><i class="fas fa-bath"></i> 6 حمام</span>
+                            <span><i class="fas fa-ruler-combined"></i> 450 م²</span>
+                        </div>
+                        <div class="property-amenities">
+                            <span class="amenity-tag"><i class="fas fa-swimming-pool"></i> مسبح</span>
+                            <span class="amenity-tag"><i class="fas fa-car"></i> موقف</span>
+                            <span class="amenity-tag"><i class="fas fa-tree"></i> حديقة</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-agent">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="وكيل">
+                                <div>
+                                    <p class="agent-name">أحمد السعيد</p>
+                                    <p class="agent-role">مستشار عقاري</p>
+                                </div>
+                            </div>
+                            <a class="btn-contact" href="contact.html">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- عقار 2 -->
+                <div class="property-card" data-category="apartment">
+                    <div class="property-image">
+                        <img src="img/f55344bd42.jpg" alt="شقة عصرية">
+                        <div class="property-badge hot">عرض ساخن</div>
+                        <div class="property-status rent">للإيجار</div>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        <div class="property-overlay">
+                            <button class="btn-tour" >
+                                <i class="fas fa-video"></i> جولة افتراضية
+                            </button>
+                            <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">4,500 ريال/شهر</div>
+                        <h3 class="property-title"><a href="property-2.html">شقة عصرية مفروشة بالكامل</a></h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> جدة، حي الشاطئ
+                        </p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 3 غرف</span>
+                            <span><i class="fas fa-bath"></i> 2 حمام</span>
+                            <span><i class="fas fa-ruler-combined"></i> 180 م²</span>
+                        </div>
+                        <div class="property-amenities">
+                            <span class="amenity-tag"><i class="fas fa-wifi"></i> إنترنت</span>
+                            <span class="amenity-tag"><i class="fas fa-dumbbell"></i> جيم</span>
+                            <span class="amenity-tag"><i class="fas fa-shield-alt"></i> حراسة</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-agent">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="وكيل">
+                                <div>
+                                    <p class="agent-name">فاطمة المحمد</p>
+                                    <p class="agent-role">مستشارة عقارية</p>
+                                </div>
+                            </div>
+                            <a class="btn-contact" href="contact.html">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- عقار 3 -->
+                <div class="property-card" data-category="land">
+                    <div class="property-image">
+                        <img src="img/998185e947.jpg" alt="أرض سكنية">
+                        <div class="property-badge">مميز</div>
+                        <div class="property-status sale">للبيع</div>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        <div class="property-overlay">
+                            <button class="btn-tour" >
+                                <i class="fas fa-map"></i> عرض الموقع
+                            </button>
+                            <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">1,800,000 ريال</div>
+                        <h3 class="property-title"><a href="property-3.html">أرض سكنية في موقع استراتيجي</a></h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> الدمام، حي الفيصلية
+                        </p>
+                        <div class="property-features">
+                            <span><i class="fas fa-ruler-combined"></i> 600 م²</span>
+                            <span><i class="fas fa-road"></i> شارعين</span>
+                            <span><i class="fas fa-certificate"></i> صك إلكتروني</span>
+                        </div>
+                        <div class="property-amenities">
+                            <span class="amenity-tag"><i class="fas fa-plug"></i> كهرباء</span>
+                            <span class="amenity-tag"><i class="fas fa-tint"></i> ماء</span>
+                            <span class="amenity-tag"><i class="fas fa-road"></i> مسفلت</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-agent">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="وكيل">
+                                <div>
+                                    <p class="agent-name">خالد العتيبي</p>
+                                    <p class="agent-role">مستشار عقاري</p>
+                                </div>
+                            </div>
+                            <a class="btn-contact" href="contact.html">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- عقار 4 -->
+                <div class="property-card" data-category="building">
+                    <div class="property-image">
+                        <img src="img/d4579661af.jpg" alt="عمارة استثمارية">
+                        <div class="property-badge investment">استثماري</div>
+                        <div class="property-status sale">للبيع</div>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        <div class="property-overlay">
+                            <button class="btn-tour" >
+                                <i class="fas fa-video"></i> جولة افتراضية
+                            </button>
+                            <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">8,500,000 ريال</div>
+                        <h3 class="property-title"><a href="property-4.html">عمارة استثمارية 10 شقق</a></h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> مكة المكرمة، العزيزية
+                        </p>
+                        <div class="property-features">
+                            <span><i class="fas fa-building"></i> 10 شقق</span>
+                            <span><i class="fas fa-layer-group"></i> 5 طوابق</span>
+                            <span><i class="fas fa-ruler-combined"></i> 800 م²</span>
+                        </div>
+                        <div class="property-amenities">
+                            <span class="amenity-tag"><i class="fas fa-elevator"></i> مصعد</span>
+                            <span class="amenity-tag"><i class="fas fa-car"></i> مواقف</span>
+                            <span class="amenity-tag"><i class="fas fa-percent"></i> عائد 8%</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-agent">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="وكيل">
+                                <div>
+                                    <p class="agent-name">محمد الأحمدي</p>
+                                    <p class="agent-role">مستشار استثماري</p>
+                                </div>
+                            </div>
+                            <a class="btn-contact" href="contact.html">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- عقار 5 -->
+                <div class="property-card" data-category="duplex">
+                    <div class="property-image">
+                        <img src="img/231bf31029.jpg" alt="دوبلكس">
+                        <div class="property-badge">حصري</div>
+                        <div class="property-status sale">للبيع</div>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        <div class="property-overlay">
+                            <button class="btn-tour" >
+                                <i class="fas fa-video"></i> جولة افتراضية
+                            </button>
+                            <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">1,950,000 ريال</div>
+                        <h3 class="property-title"><a href="property-5.html">دوبلكس راقي بإطلالة مميزة</a></h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> الخبر، الكورنيش
+                        </p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 غرف</span>
+                            <span><i class="fas fa-bath"></i> 4 حمام</span>
+                            <span><i class="fas fa-ruler-combined"></i> 320 م²</span>
+                        </div>
+                        <div class="property-amenities">
+                            <span class="amenity-tag"><i class="fas fa-water"></i> إطلالة بحرية</span>
+                            <span class="amenity-tag"><i class="fas fa-couch"></i> مفروش</span>
+                            <span class="amenity-tag"><i class="fas fa-concierge-bell"></i> خدمات</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-agent">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="وكيل">
+                                <div>
+                                    <p class="agent-name">سارة الغامدي</p>
+                                    <p class="agent-role">مستشارة عقارية</p>
+                                </div>
+                            </div>
+                            <a class="btn-contact" href="contact.html">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- عقار 6 -->
+                <div class="property-card" data-category="villa">
+                    <div class="property-image">
+                        <img src="img/ee0e10ac0d.jpg" alt="فيلا عصرية">
+                        <div class="property-badge luxury">فاخر</div>
+                        <div class="property-status sale">للبيع</div>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        <div class="property-overlay">
+                            <button class="btn-tour" >
+                                <i class="fas fa-video"></i> جولة افتراضية
+                            </button>
+                            <button class="btn-share"><i class="fas fa-share-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">4,200,000 ريال</div>
+                        <h3 class="property-title"><a href="property-6.html">فيلا عصرية بتصميم معماري فريد</a></h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i> الرياض، حي النرجس
+                        </p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 6 غرف</span>
+                            <span><i class="fas fa-bath"></i> 7 حمام</span>
+                            <span><i class="fas fa-ruler-combined"></i> 550 م²</span>
+                        </div>
+                        <div class="property-amenities">
+                            <span class="amenity-tag"><i class="fas fa-hot-tub"></i> جاكوزي</span>
+                            <span class="amenity-tag"><i class="fas fa-home-lg-alt"></i> مصعد</span>
+                            <span class="amenity-tag"><i class="fas fa-solar-panel"></i> طاقة شمسية</span>
+                        </div>
+                        <div class="property-footer">
+                            <div class="property-agent">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="وكيل">
+                                <div>
+                                    <p class="agent-name">عبدالله الدوسري</p>
+                                    <p class="agent-role">مستشار عقارات فاخرة</p>
+                                </div>
+                            </div>
+                            <a class="btn-contact" href="contact.html">
+                                <i class="fas fa-phone"></i> اتصل
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn-load-more">
+                    <i class="fas fa-plus-circle"></i> عرض المزيد من العقارات
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">خدماتنا المتكاملة</span>
+                <h2 class="section-title">نقدم لك كل ما تحتاجه</h2>
+                <p class="section-description">حلول عقارية شاملة تغطي جميع احتياجاتك</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in">
+                    <div class="service-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>بيع وشراء العقارات</h3>
+                    <p>نساعدك في بيع أو شراء العقار بأفضل الأسعار وأسرع الإجراءات</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> تقييم عقاري دقيق</li>
+                        <li><i class="fas fa-check"></i> تسويق احترافي</li>
+                        <li><i class="fas fa-check"></i> إجراءات قانونية متكاملة</li>
+                    </ul>
+                    <button class="btn-service">اطلب الخدمة</button>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>إدارة العقارات</h3>
+                    <p>إدارة شاملة لعقاراتك الاستثمارية بكفاءة واحترافية</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> إدارة العقود</li>
+                        <li><i class="fas fa-check"></i> تحصيل الإيجارات</li>
+                        <li><i class="fas fa-check"></i> الصيانة الدورية</li>
+                    </ul>
+                    <button class="btn-service">اطلب الخدمة</button>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>استشارات استثمارية</h3>
+                    <p>نصائح وتوجيهات من خبراء لضمان استثمار عقاري ناجح</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> دراسة جدوى</li>
+                        <li><i class="fas fa-check"></i> تحليل السوق</li>
+                        <li><i class="fas fa-check"></i> توقعات العوائد</li>
+                    </ul>
+                    <button class="btn-service">اطلب الخدمة</button>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h3>التمويل العقاري</h3>
+                    <p>نساعدك في الحصول على أفضل خيارات التمويل من البنوك</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> مقارنة العروض</li>
+                        <li><i class="fas fa-check"></i> إجراءات مبسطة</li>
+                        <li><i class="fas fa-check"></i> متابعة الموافقة</li>
+                    </ul>
+                    <button class="btn-service">اطلب الخدمة</button>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>الاستشارات القانونية</h3>
+                    <p>مراجعة قانونية شاملة لضمان سلامة المعاملات العقارية</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> فحص الصكوك</li>
+                        <li><i class="fas fa-check"></i> مراجعة العقود</li>
+                        <li><i class="fas fa-check"></i> حل النزاعات</li>
+                    </ul>
+                    <button class="btn-service">اطلب الخدمة</button>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>التقييم والصيانة</h3>
+                    <p>خدمات تقييم احترافية وصيانة دورية للعقارات</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> تقييم معتمد</li>
+                        <li><i class="fas fa-check"></i> كشف العيوب</li>
+                        <li><i class="fas fa-check"></i> صيانة شاملة</li>
+                    </ul>
+                    <button class="btn-service">اطلب الخدمة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats" id="stats">
+        <div class="stats-overlay"></div>
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-subtitle">إنجازاتنا بالأرقام</span>
+                <h2 class="section-title">نفخر بثقة عملائنا</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up">
+                    <div class="stat-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="stat-number" data-target="5280">0</div>
+                    <div class="stat-label">عقار متاح</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="12450">0</div>
+                    <div class="stat-label">عميل سعيد</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="stat-number" data-target="8920">0</div>
+                    <div class="stat-label">صفقة ناجحة</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">سنة خبرة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">ماذا يقول عملاؤنا</span>
+                <h2 class="section-title">شهادات النجاح</h2>
+                <p class="section-description">آراء حقيقية من عملاء استفادوا من خدماتنا</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"تجربة ممتازة من البداية حتى النهاية. الفريق محترف جداً وساعدوني في إيجاد الفيلا المثالية لعائلتي. الإجراءات كانت سريعة وسلسة والأسعار منافسة جداً."</p>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="عميل">
+                        <div>
+                            <h4>عبدالرحمن المطيري</h4>
+                            <p>مستثمر عقاري</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"خدمة عملاء رائعة ومتابعة مستمرة. استطعت بيع عقاري في وقت قياسي وبسعر ممتاز. أنصح الجميع بالتعامل معهم."</p>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="عميل">
+                        <div>
+                            <h4>نورة العمري</h4>
+                            <p>صاحبة عقار</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"أفضل منصة عقارية تعاملت معها. البحث سهل والمعلومات واضحة والصور بجودة عالية. وجدت شقتي المناسبة خلال أسبوع فقط!"</p>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="عميل">
+                        <div>
+                            <h4>فهد القحطاني</h4>
+                            <p>موظف</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"الاستشارات القانونية والتمويلية كانت مفيدة جداً. ساعدوني في الحصول على أفضل عرض تمويل عقاري. شكراً للفريق المحترف."</p>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="عميل">
+                        <div>
+                            <h4>منى الشهري</h4>
+                            <p>معلمة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-navigation">
+                <button class="testimonial-prev"><i class="fas fa-chevron-right"></i></button>
+                <button class="testimonial-next"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- قسم فريق العمل -->
+    <section class="agents" id="agents">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">تعرف على فريقنا</span>
+                <h2 class="section-title">مستشارون عقاريون محترفون</h2>
+                <p class="section-description">فريق من الخبراء جاهز لمساعدتك في كل خطوة</p>
+            </div>
+            <div class="agents-grid">
+                <div class="agent-card" data-aos="flip-left">
+                    <div class="agent-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="مستشار">
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-info">
+                        <h3>أحمد السعيد</h3>
+                        <p class="agent-title">مدير المبيعات</p>
+                        <div class="agent-stats">
+                            <div class="agent-stat">
+                                <i class="fas fa-home"></i>
+                                <span>328 عقار</span>
+                            </div>
+                            <div class="agent-stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.9/5</span>
+                            </div>
+                        </div>
+                        <p class="agent-desc">خبرة 12 عام في المبيعات العقارية</p>
+                        <button class="btn-agent-contact">
+                            <i class="fas fa-phone"></i> اتصل الآن
+                        </button>
+                    </div>
+                </div>
+                <div class="agent-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="agent-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="مستشار">
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-info">
+                        <h3>فاطمة المحمد</h3>
+                        <p class="agent-title">مستشارة عقارية أولى</p>
+                        <div class="agent-stats">
+                            <div class="agent-stat">
+                                <i class="fas fa-home"></i>
+                                <span>245 عقار</span>
+                            </div>
+                            <div class="agent-stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.8/5</span>
+                            </div>
+                        </div>
+                        <p class="agent-desc">متخصصة في العقارات السكنية</p>
+                        <button class="btn-agent-contact">
+                            <i class="fas fa-phone"></i> اتصل الآن
+                        </button>
+                    </div>
+                </div>
+                <div class="agent-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="agent-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="مستشار">
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-info">
+                        <h3>خالد العتيبي</h3>
+                        <p class="agent-title">مستشار أراضي</p>
+                        <div class="agent-stats">
+                            <div class="agent-stat">
+                                <i class="fas fa-home"></i>
+                                <span>189 عقار</span>
+                            </div>
+                            <div class="agent-stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.7/5</span>
+                            </div>
+                        </div>
+                        <p class="agent-desc">خبير في الأراضي الاستثمارية</p>
+                        <button class="btn-agent-contact">
+                            <i class="fas fa-phone"></i> اتصل الآن
+                        </button>
+                    </div>
+                </div>
+                <div class="agent-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="agent-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ccircle cx='50' cy='38' r='18' fill='%23d4af37'/%3E%3Cpath d='M14 100c0-24 16-38 36-38s36 14 36 38z' fill='%23d4af37'/%3E%3C/svg%3E" alt="مستشار">
+                        <div class="agent-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="agent-info">
+                        <h3>محمد الأحمدي</h3>
+                        <p class="agent-title">مستشار استثماري</p>
+                        <div class="agent-stats">
+                            <div class="agent-stat">
+                                <i class="fas fa-home"></i>
+                                <span>412 عقار</span>
+                            </div>
+                            <div class="agent-stat">
+                                <i class="fas fa-star"></i>
+                                <span>5.0/5</span>
+                            </div>
+                        </div>
+                        <p class="agent-desc">متخصص في العقارات الاستثمارية</p>
+                        <button class="btn-agent-contact">
+                            <i class="fas fa-phone"></i> اتصل الآن
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المدونة -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">مدونتنا العقارية</span>
+                <h2 class="section-title">أحدث المقالات والنصائح</h2>
+                <p class="section-description">معلومات قيمة لمساعدتك في اتخاذ قرارات عقارية ذكية</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card" data-aos="fade-right">
+                    <div class="blog-image">
+                        <img src="img/6373984192.jpg" alt="مقال">
+                        <div class="blog-category">نصائح</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 10 نوفمبر 2025</span>
+                            <span><i class="far fa-user"></i> أحمد السعيد</span>
+                        </div>
+                        <h3>10 نصائح لشراء منزل أول مرة</h3>
+                        <p>دليل شامل للمشترين الجدد لتجنب الأخطاء الشائعة والحصول على أفضل صفقة...</p>
+                        <button class="btn-read-more">
+                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos="fade-up">
+                    <div class="blog-image">
+                        <img src="img/3b4d4f69fc.jpg" alt="مقال">
+                        <div class="blog-category">استثمار</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 8 نوفمبر 2025</span>
+                            <span><i class="far fa-user"></i> محمد الأحمدي</span>
+                        </div>
+                        <h3>أفضل مناطق الاستثمار العقاري 2025</h3>
+                        <p>تحليل شامل لأفضل المناطق الاستثمارية في المملكة مع توقعات النمو...</p>
+                        <button class="btn-read-more">
+                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos="fade-left">
+                    <div class="blog-image">
+                        <img src="img/c81bbc4409.jpg" alt="مقال">
+                        <div class="blog-category">تمويل</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> 5 نوفمبر 2025</span>
+                            <span><i class="far fa-user"></i> فاطمة المحمد</span>
+                        </div>
+                        <h3>كيف تحصل على تمويل عقاري بأفضل الشروط</h3>
+                        <p>دليلك الكامل لفهم خيارات التمويل العقاري والحصول على أفضل عرض...</p>
+                        <button class="btn-read-more">
+                            اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشركاء -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">شركاؤنا في النجاح</h2>
+            </div>
+            <div class="partners-slider">
+                <div class="partner-logo">
+                    <i class="fas fa-building" style="font-size: 3rem; color: #666;"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fas fa-university" style="font-size: 3rem; color: #666;"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fas fa-landmark" style="font-size: 3rem; color: #666;"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fas fa-city" style="font-size: 3rem; color: #666;"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fas fa-home" style="font-size: 3rem; color: #666;"></i>
+                </div>
+                <div class="partner-logo">
+                    <i class="fas fa-building" style="font-size: 3rem; color: #666;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="section-header">
+                        <span class="section-subtitle">تواصل معنا</span>
+                        <h2 class="section-title">نحن هنا لمساعدتك</h2>
+                        <p class="section-description">لا تتردد في التواصل معنا لأي استفسار أو لحجز موعد</p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>اتصل بنا</h4>
+                                <p>+966 50 123 4567</p>
+                                <p>+966 11 234 5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>راسلنا</h4>
+                                <p>info@goldenrealestate.sa</p>
+                                <p>support@goldenrealestate.sa</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>موقعنا</h4>
+                                <p>طريق الملك فهد، الرياض</p>
+                                <p>المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>ساعات العمل</h4>
+                                <p>السبت - الخميس: 9 صباحاً - 6 مساءً</p>
+                                <p>الجمعة: مغلق</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label>الاسم الكامل</label>
+                            <input type="text" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>البريد الإلكتروني</label>
+                                <input type="email" class="form-control" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>رقم الجوال</label>
+                                <input type="tel" class="form-control" placeholder="+966 50 123 4567" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>الموضوع</label>
+                            <select class="form-control">
+                                <option>استفسار عام</option>
+                                <option>شراء عقار</option>
+                                <option>بيع عقار</option>
+                                <option>تأجير عقار</option>
+                                <option>استشارة استثمارية</option>
+                                <option>تمويل عقاري</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>الرسالة</label>
+                            <textarea class="form-control" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخريطة -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.2563977823417!2d46.6752957!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2ssa!4v1635000000000!5m2!1sar!2ssa" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-building"></i>
+                        <span>العقارات الذهبية</span>
+                    </div>
+                    <p>منصة عقارية رائدة تقدم أفضل الحلول العقارية في المملكة العربية السعودية</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#properties">العقارات</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>خدماتنا</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">بيع العقارات</a></li>
+                        <li><a href="#">شراء العقارات</a></li>
+                        <li><a href="#">التأجير</a></li>
+                        <li><a href="#">الاستشارات</a></li>
+                        <li><a href="#">التمويل العقاري</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>النشرة الإخبارية</h3>
+                    <p>اشترك ليصلك كل جديد من عروضنا ومقالاتنا</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-apps">
+                        <a href="#" class="app-badge">
+                            <i class="fab fa-apple"></i>
+                            <span>App Store</span>
+                        </a>
+                        <a href="#" class="app-badge">
+                            <i class="fab fa-google-play"></i>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 العقارات الذهبية. جميع الحقوق محفوظة.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">خريطة الموقع</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر الرجوع للأعلى -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal تسجيل الدخول -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('loginModal')">&times;</button>
+            <h2>تسجيل الدخول</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>كلمة المرور</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn-modal-submit">دخول</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    <script src="slider.js"></script>
+    <script src="filters.js"></script>
+<script src="site.js"></script></body>
+</html>
