@@ -294,7 +294,7 @@ class PropertyGallery {
                 <button class="gallery-close">&times;</button>
                 <button class="gallery-prev"><i class="fas fa-chevron-right"></i></button>
                 <button class="gallery-next"><i class="fas fa-chevron-left"></i></button>
-                <img class="gallery-image" src="" alt="عقار">
+                <img class="gallery-image" alt="عقار">
                 <div class="gallery-counter">
                     <span class="gallery-current">1</span>
                     /
