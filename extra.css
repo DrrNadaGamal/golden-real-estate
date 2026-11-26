@@ -1,6 +1,6 @@
 .nav-buttons .btn-primary,.btn-primary.full,.btn-secondary.full{display:inline-flex;align-items:center;gap:8px;text-decoration:none;justify-content:center}
 .btn-primary{cursor:pointer}
-.logo{text-decoration:none;color:inherit;display:flex;align-items:center;gap:10px}
+.logo{text-decoration:none;color:#d4af37;display:flex;align-items:center;gap:10px}
 .page-banner{background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;padding:120px 0 56px;text-align:center}
 .page-banner h1{font-size:clamp(1.8rem,4.4vw,3rem);color:#d4af37;margin-bottom:8px}
 .page-banner p{color:#cfd3dc}
